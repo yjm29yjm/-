@@ -1,14 +1,11 @@
-#include <stdio.h>
+#include  <stdio.h>
 int main()
 {
-	int i = 1;
-	while (i<= 100)
+	int ch = 0;
+	while (ch = getchar() != EOF)
 	{
-        if(i%2==1)
-		{
-			printf("%5d", i);
-		}
-		i++;
-	  }
+		putchar(ch);
+	}
+
 	return 0;
 }
