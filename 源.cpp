@@ -1,11 +1,13 @@
-#include  <stdio.h>
+#include <stdio.h>
 int main()
 {
-	int ch = 0;
-	while (ch = getchar() != EOF)
+	int i = 0;
+	do
 	{
-		putchar(ch);
-	}
-
-	return 0;
+		if (i == 5)
+			break;
+		printf("%d", i);
+		i++;
+	} while (i < 10);
+		return 0;
 }
