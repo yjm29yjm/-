@@ -1,13 +1,18 @@
 #include <stdio.h>
+void print(int n)
+{
+	if (n > 9)
+
+	{
+		print(n / 10);
+	}
+	printf("%d\n", n % 10);
+}
 int main()
 {
-	int i = 0;
-	do
-	{
-		if (i == 5)
-			break;
-		printf("%d", i);
-		i++;
-	} while (i < 10);
-		return 0;
+	unsigned int num = 0;
+
+	scanf_s("%d ", &num);
+	print(num);
+	return 0;
 }
