@@ -1,19 +1,20 @@
 #include <stdio.h>
 int main()
 {
-	int i = 0;
-	int n = 0;
-	int ret = 1;
-	scanf_s("%d", &n);
-	for (i = 1; i <= n; i++)
+	int a, b;
+	int i, j;
+	int n;
+	scanf_s("%d", &n);;
+	int sum[20] = { 0 };
+	for (i = 0; i < n; i++)
 	{
-		ret = ret * i;
+         scanf_s("%d%d", &a, &b);
+	     sum [i] = a + b;
 	}
-	printf("ret = %d", ret);
-
-
-
-
-
+	for (j = 0; j < n; j++)
+	{
+     printf("%d\n", sum[j]);
+	}
+		
 	return 0;
 }
